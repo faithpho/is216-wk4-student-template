@@ -50,7 +50,7 @@
             div ID : {{id}} 
         </div>
         
-        <button type="button" v-on:click="changeColor"">Change Color</button>
+        <button type="button" v-on:click="changeColor">Change Color</button>
     </div>
 
     <div id="part2">
