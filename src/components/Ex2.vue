@@ -2,11 +2,15 @@
     import { ref } from 'vue'
 
     // Add code here
+    import me from "/assets/me.png"
+    const width = ref(300);
+    const y = ref(200);
 
 </script>
 
 <template>
 
     <!-- Add code here -->
+     <img v-bind:src="me" v-bind:width="width" v-bind:height="y">
    
 </template>
