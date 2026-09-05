@@ -4,13 +4,24 @@
     // Add code here
     import me from "/assets/me.png"
     const width = ref(300);
-    const y = ref(200);
+    const height = ref(200);
+
+    // multiple attribute binding
+    const imgAttrs = {
+        src: me,
+        width: width.value,
+        height: height.value
+    }
 
 </script>
 
 <template>
 
     <!-- Add code here -->
-     <img v-bind:src="me" v-bind:width="width" v-bind:height="y">
-   
+    <!-- single attribute binding -->
+    <img v-bind:src="me" v-bind:width="width" v-bind:height="height">
+
+    <!-- multiple attribute binding -->
+    <img v-bind="imgAttrs">
+
 </template>

@@ -46,11 +46,11 @@
     <!-- <div id="demo" class="blueBox">div ID : demo</div> -->
 
     <div id="part1">
-        <div :id = id v-bind:class="{blueBox: blueBox, redBox: !blueBox}">
+        <div :id = "id" v-bind:class="{blueBox: blueBox, redBox: !blueBox}">
             div ID : {{id}} 
         </div>
         
-        <button type="button" v-on:click="changeColor">Change Color</button>
+        <button type="button" v-on:click="changeColor" :class="{'btn-primary': blueBtn, 'btn-danger': !blueBtn}">Change Color</button>
     </div>
 
     <div id="part2">
