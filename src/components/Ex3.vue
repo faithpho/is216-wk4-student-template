@@ -3,7 +3,7 @@
 
     // Add code here
     const loginType = ref("username")
-    const username = ref('')
+    const username = ref('') // need to initialise variable so taht the value input can be accessed here.
     const email = ref('')
     
 </script>

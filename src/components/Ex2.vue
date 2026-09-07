@@ -10,6 +10,8 @@
         width: 200,
         height: 200
     })
+    // width : '200' also can! cos vue.js reads it as a string regardless,
+    // so you put width: 200 ==> will be seen as "200"!!!
 </script>
 
 <template>
