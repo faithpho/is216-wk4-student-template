@@ -65,7 +65,7 @@
 
     <div id="part2">
         <div :id = "id2" :style="{color: activeColor}">
-            div ID : {{id}}
+            div ID : {{id2}}
         </div>
        
         <button type="button" v-on:click="changeTextColor" :class="{'btn-primary':!redBtn,'btn-danger':redBtn}">Change Text Color</button> 
