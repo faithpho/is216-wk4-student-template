@@ -8,7 +8,6 @@
     const blueBtn = ref(true)
 
     // part 2
-    const id2 = ref('demo')
     const activeColor = ref('red')
     const redBtn = ref(true)
 
@@ -64,7 +63,7 @@
     </div>
 
     <div id="part2">
-        <div :id = "id2" :style="{color: activeColor}">
+        <div :id = "id" :style="{color: activeColor}">
             div ID : {{id}}
         </div>
        
