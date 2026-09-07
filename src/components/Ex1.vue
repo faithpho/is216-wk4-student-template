@@ -16,6 +16,10 @@
     </label> 
     
 </template>
-
+<!-- 
+if never put :value this is how it will show in backend
+<input type="radio" name="fruit">
+<input type="radio" name="fruit">
+<input type="radio" name="fruit"> -->
 <style scoped>
 </style>
