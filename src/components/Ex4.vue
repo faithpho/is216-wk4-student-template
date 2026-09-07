@@ -8,6 +8,7 @@
     const blueBtn = ref(true)
 
     // part 2
+    const id2 = ref('demo')
     const activeColor = ref('red')
     const redBtn = ref(true)
 
@@ -49,12 +50,21 @@
         <div :id = "id" v-bind:class="{blueBox: blueBox, redBox: !blueBox}">
             div ID : {{id}} 
         </div>
-        
+       
+        <!-- <div id="part1">
+            <div id='id' :class="blueBox ? 'blueBox' : 'redBox'"> 
+            div ID : {{ id }}
+            </div>
+
+            <button type="button" v-on:click="changeColor" :class="blueBtn ? 'btn-primary' : 'btn-danger'">Change Color</button>
+        </div> -->
+
+        <!-- :class =-->
         <button type="button" v-on:click="changeColor" :class="{'btn-primary': blueBtn, 'btn-danger': !blueBtn}">Change Color</button>
     </div>
 
     <div id="part2">
-        <div :id = "id" :style="{color: activeColor}">
+        <div :id = "id2" :style="{color: activeColor}">
             div ID : {{id}}
         </div>
        
@@ -70,8 +80,8 @@
     .blueBox {
         background-color: blue;
     }
-    .btn-primary {
-        background-color: blue;
+        .btn-primary {
+            background-color: blue;
         color: white;
     }
     .btn-danger {
